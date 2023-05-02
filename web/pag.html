@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Menú desplegable</title>
+    <style>
+      /* Estilos para el menú */
+      .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+      /* Estilos para los elementos del menú */
+      .menu li {
+        float: left;
+      }
+      
+      /* Estilos para los enlaces del menú */
+      .menu li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      /* Estilos para los enlaces activos */
+      .menu li a.active {
+        background-color: #4CAF50;
+      }
+      
+      /* Estilos para los enlaces al pasar el mouse por encima */
+      .menu li a:hover {
+        background-color: #555;
+        color: white;
+      }
+      
+      /* Estilos para los elementos del menú desplegable */
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      
+      /* Estilos para el botón que activa el menú desplegable */
+      .dropdown .dropbtn {
+        font-size: 16px;    
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        margin: 0;
+      }
+      
+      /* Estilos para los enlaces del menú desplegable */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        z-index: 1;
+      }
+      
+      /* Estilos para los enlaces del menú desplegable */
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      /* Estilos para los enlaces del menú desplegable al pasar el mouse por encima */
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      
+      /* Mostrar el menú desplegable al pasar el mouse por encima del botón */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li><a class="active" href="#">Inicio</a></li>
+      <li class="dropdown">
+        <a class="dropbtn" href="#">Productos</a>
+        <div class="dropdown-content">
+          <a href="#">Producto 1</a>
+          <a href="#">Producto 2</a>
+          <a href="#">Producto 3</a>
+        </div>
+      </li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </body>
+</html>
