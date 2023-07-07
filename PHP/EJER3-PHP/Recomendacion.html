@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recomendar Sitio Web</title>
+    <style>
+        .container {
+            width: 400px;
+            margin: 0 auto;
+        }
+        label, input, textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+        textarea {
+            height: 100px;
+        }
+        input[type="submit"] {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Recomendar Sitio Web</h2>
+        <form action="Correorecom.php" method="POST">
+            <label for="nombre">Tu Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Tu Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="nombre_amigo">Nombre del Amigo:</label>
+            <input type="text" id="nombre_amigo" name="nombre_amigo" required>
+            
+            <label for="email_amigo">Email del Amigo:</label>
+            <input type="email" id="email_amigo" name="email_amigo" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
